@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wct-B0-EQ8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hOW-Tt-Svt">
+            <objects>
+                <navigationController id="Wct-B0-EQ8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ajq-Jp-F7E">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mgt-gI-IVo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dac-Z6-i3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-538" y="421"/>
+        </scene>
+        <!--⚙-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MSHomeViewController" customModule="MySecret" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FCz-Dc-zwP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="msHomeTVC" id="rup-D2-roU">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rup-D2-roU" id="NIw-6z-aeo">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="nUV-Fc-8ux"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="T6s-2H-t88"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="⚙" id="TA0-at-EA1"/>
+                    <connections>
+                        <outlet property="msTableView" destination="FCz-Dc-zwP" id="0w2-IC-Leb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261" y="421"/>
+        </scene>
+        <!--Phone Contacts View Controller-->
+        <scene sceneID="fbg-0Y-vyG">
+            <objects>
+                <viewController storyboardIdentifier="msPhoneContactsVC" id="WaD-ww-kHW" customClass="MSPhoneContactsViewController" customModule="MySecret" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nmA-ak-qij"/>
+                        <viewControllerLayoutGuide type="bottom" id="VvB-cQ-BIc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gul-oC-Zdx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f9y-fB-xIZ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactsTVC" rowHeight="44" id="bwE-r3-1V4">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bwE-r3-1V4" id="Bnv-4a-DMz">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="xdk-iv-hcv" kind="show" identifier="showContactDetailInfo" id="T4I-pB-u3q"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="WaD-ww-kHW" id="zxG-dJ-qJa"/>
+                                    <outlet property="delegate" destination="WaD-ww-kHW" id="xc5-Rq-bif"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VvB-cQ-BIc" firstAttribute="top" secondItem="f9y-fB-xIZ" secondAttribute="bottom" id="NQg-p9-Tu0"/>
+                            <constraint firstItem="f9y-fB-xIZ" firstAttribute="top" secondItem="gul-oC-Zdx" secondAttribute="topMargin" id="drX-CE-dOA"/>
+                            <constraint firstItem="f9y-fB-xIZ" firstAttribute="leading" secondItem="gul-oC-Zdx" secondAttribute="leadingMargin" constant="-20" id="jVQ-hJ-7zD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f9y-fB-xIZ" secondAttribute="trailing" constant="-20" id="myu-8e-Ry1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contactsTableView" destination="f9y-fB-xIZ" id="rlG-jJ-AYN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yaN-at-aZj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918" y="118"/>
+        </scene>
+        <!--Bluetooth View Controller-->
+        <scene sceneID="qb1-z8-1Eg">
+            <objects>
+                <viewController storyboardIdentifier="msBluetoothVC" id="bbE-Th-W1T" customClass="MSBluetoothViewController" customModule="MySecret" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ctd-6P-gNr"/>
+                        <viewControllerLayoutGuide type="bottom" id="sg3-CQ-rXS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5f9-Wp-XJl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CUI-Y9-pOu">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="WHP-4f-zxc"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bluetoothTVC" rowHeight="100" id="YvG-gz-GS0" customClass="BluetoothCustomTVC" customModule="MySecret" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YvG-gz-GS0" id="2Qg-lE-h54">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E0Z-hf-R8w">
+                                                    <rect key="frame" x="12" y="6" width="564" height="96"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="96" id="FeX-Gn-Brz"/>
+                                                    </constraints>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="E0Z-hf-R8w" secondAttribute="trailing" constant="16" id="8N7-Oe-Q7r"/>
+                                                <constraint firstItem="E0Z-hf-R8w" firstAttribute="leading" secondItem="2Qg-lE-h54" secondAttribute="leadingMargin" constant="4" id="nft-FG-dG4"/>
+                                                <constraint firstItem="E0Z-hf-R8w" firstAttribute="top" secondItem="2Qg-lE-h54" secondAttribute="topMargin" constant="-2" id="o4q-aH-xEw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="textView" destination="E0Z-hf-R8w" id="vME-ft-RdN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="bbE-Th-W1T" id="7GH-he-AtX"/>
+                                    <outlet property="delegate" destination="bbE-Th-W1T" id="m3X-Ag-fjm"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CUI-Y9-pOu" firstAttribute="leading" secondItem="5f9-Wp-XJl" secondAttribute="leadingMargin" constant="-20" id="5ym-NO-KZA"/>
+                            <constraint firstItem="CUI-Y9-pOu" firstAttribute="top" secondItem="5f9-Wp-XJl" secondAttribute="topMargin" id="7QV-59-l1B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CUI-Y9-pOu" secondAttribute="trailing" constant="-20" id="Aeh-t8-g01"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bluetoothTableView" destination="CUI-Y9-pOu" id="nf5-Sn-ZEC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhc-40-zMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918" y="791"/>
+        </scene>
+        <!--Contacts Detail Info View Controller-->
+        <scene sceneID="bOj-SA-AGK">
+            <objects>
+                <viewController id="xdk-iv-hcv" customClass="MSContactsDetailInfoViewController" customModule="MySecret" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZNz-1h-BIi"/>
+                        <viewControllerLayoutGuide type="bottom" id="9qU-vE-oDT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZuE-H9-lGw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rHq-4N-wD0">
+                                <rect key="frame" x="56" y="73" width="479" height="417"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="417" id="Kqq-TL-TRI"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rHq-4N-wD0" firstAttribute="top" secondItem="ZNz-1h-BIi" secondAttribute="bottom" constant="53" id="L0J-Ab-RMi"/>
+                            <constraint firstItem="rHq-4N-wD0" firstAttribute="leading" secondItem="ZuE-H9-lGw" secondAttribute="leadingMargin" constant="36" id="Nn0-aO-l2m"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rHq-4N-wD0" secondAttribute="trailing" constant="45" id="t6Q-IP-JIf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="rHq-4N-wD0" id="SCF-oM-Wqu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j4n-mQ-B4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1566" y="118"/>
+        </scene>
+    </scenes>
+</document>
