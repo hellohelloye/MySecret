@@ -19,7 +19,6 @@ class MSPhoneContactsViewController: UIViewController, UITableViewDelegate, UITa
     
     func findContacts() -> [CNContact] {
         let store = CNContactStore()
-        
         let keysToFetch = [CNContactFormatter.descriptorForRequiredKeysForStyle(.FullName), CNContactImageDataKey, CNContactPhoneNumbersKey]
         let fetchRequest = CNContactFetchRequest(keysToFetch: keysToFetch)
         

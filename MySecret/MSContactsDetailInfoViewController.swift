@@ -12,7 +12,6 @@ import ContactsUI
 
 class MSContactsDetailInfoViewController: UIViewController {
     var contact: CNContact = CNContact()
-    
     @IBOutlet var textView: UITextView!
     
     override func viewDidLoad() {
@@ -20,5 +19,4 @@ class MSContactsDetailInfoViewController: UIViewController {
         
        textView.text = "\(contact)"
     }
-    
 }

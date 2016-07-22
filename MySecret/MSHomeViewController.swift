@@ -11,12 +11,10 @@ import UIKit
 class MSHomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var msTableView: UITableView!
-    
     var items: [String] = ["ACCESS PHONE CONTACTS","DISPLAY NEARBY BLUETOOTH"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     internal func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -46,6 +44,5 @@ class MSHomeViewController: UIViewController, UITableViewDataSource, UITableView
             break
         }
     }
-
 }
 

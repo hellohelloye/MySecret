@@ -27,10 +27,9 @@ class MSBluetoothViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func centralManagerDidUpdateState(central: CBCentralManager) {
+        
         if (central.state == CBCentralManagerState.PoweredOn) {
-            
             self.centralManager?.scanForPeripheralsWithServices(nil, options: nil)
-            
         } else {
             print("..................")
         }
@@ -54,5 +53,4 @@ class MSBluetoothViewController: UIViewController, UITableViewDataSource, UITabl
         cell.textView.text = "\(peripheral)"
         return cell
     }
-    
 }
