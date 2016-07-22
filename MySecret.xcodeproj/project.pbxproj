@@ -501,6 +501,7 @@
 				09302CA71D428268008A3F74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09302CA81D428268008A3F74 /* Build configuration list for PBXNativeTarget "MySecretTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +510,7 @@
 				09302CAA1D428268008A3F74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09302CAB1D428268008A3F74 /* Build configuration list for PBXNativeTarget "MySecretUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +519,7 @@
 				09302CAD1D428268008A3F74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
