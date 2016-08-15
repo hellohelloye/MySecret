@@ -18,6 +18,13 @@
 		09302CB11D428B14008A3F74 /* MSBluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09302CB01D428B14008A3F74 /* MSBluetoothViewController.swift */; };
 		09302CB31D4290F4008A3F74 /* MSContactsDetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09302CB21D4290F4008A3F74 /* MSContactsDetailInfoViewController.swift */; };
 		09302CB51D42A250008A3F74 /* BluetoothCustomTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09302CB41D42A250008A3F74 /* BluetoothCustomTVC.swift */; };
+		0930BA071D6223EA001D496F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0930BA061D6223EA001D496F /* GoogleService-Info.plist */; };
+		0930BA0A1D622576001D496F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0930BA091D622576001D496F /* AddressBook.framework */; };
+		0930BA0C1D622580001D496F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0930BA0B1D622580001D496F /* SystemConfiguration.framework */; };
+		0930BA0E1D622588001D496F /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0930BA0D1D622588001D496F /* SafariServices.framework */; };
+		097B226C1D621A07007FADCF /* MSTwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B226B1D621A07007FADCF /* MSTwitterViewController.swift */; };
+		09DE1FFF1D6238C90022BF28 /* MSGoogleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DE1FFD1D6231350022BF28 /* MSGoogleViewController.swift */; };
+		A09ED3B0BC2DEE7AE5672058 /* Pods_MySecret.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11791F1F1135F7E5355E31BC /* Pods_MySecret.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +62,16 @@
 		09302CB01D428B14008A3F74 /* MSBluetoothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBluetoothViewController.swift; sourceTree = "<group>"; };
 		09302CB21D4290F4008A3F74 /* MSContactsDetailInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSContactsDetailInfoViewController.swift; sourceTree = "<group>"; };
 		09302CB41D42A250008A3F74 /* BluetoothCustomTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothCustomTVC.swift; sourceTree = "<group>"; };
+		0930BA061D6223EA001D496F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0930BA081D62249D001D496F /* MySecret-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MySecret-Bridging-Header.h"; sourceTree = "<group>"; };
+		0930BA091D622576001D496F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		0930BA0B1D622580001D496F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0930BA0D1D622588001D496F /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		097B226B1D621A07007FADCF /* MSTwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterViewController.swift; sourceTree = "<group>"; };
+		09DE1FFD1D6231350022BF28 /* MSGoogleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSGoogleViewController.swift; sourceTree = "<group>"; };
+		11791F1F1135F7E5355E31BC /* Pods_MySecret.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySecret.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		254F6C6C917EA3DE38F97E42 /* Pods-MySecret.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySecret.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySecret/Pods-MySecret.debug.xcconfig"; sourceTree = "<group>"; };
+		862405C9716C230C83661EBB /* Pods-MySecret.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySecret.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySecret/Pods-MySecret.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +79,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0930BA0E1D622588001D496F /* SafariServices.framework in Frameworks */,
+				0930BA0C1D622580001D496F /* SystemConfiguration.framework in Frameworks */,
+				0930BA0A1D622576001D496F /* AddressBook.framework in Frameworks */,
+				A09ED3B0BC2DEE7AE5672058 /* Pods_MySecret.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +110,8 @@
 				09302C941D428268008A3F74 /* MySecretTests */,
 				09302C9F1D428268008A3F74 /* MySecretUITests */,
 				09302C7E1D428267008A3F74 /* Products */,
+				EA3D061B70A1B823C98B8EC6 /* Pods */,
+				E8445C4D16B570BF054D85A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,9 +134,13 @@
 				09302CB21D4290F4008A3F74 /* MSContactsDetailInfoViewController.swift */,
 				09302CB01D428B14008A3F74 /* MSBluetoothViewController.swift */,
 				09302CB41D42A250008A3F74 /* BluetoothCustomTVC.swift */,
+				097B226B1D621A07007FADCF /* MSTwitterViewController.swift */,
+				09DE1FFD1D6231350022BF28 /* MSGoogleViewController.swift */,
 				09302C841D428267008A3F74 /* Main.storyboard */,
 				09302C871D428267008A3F74 /* Assets.xcassets */,
 				09302C891D428267008A3F74 /* LaunchScreen.storyboard */,
+				0930BA061D6223EA001D496F /* GoogleService-Info.plist */,
+				0930BA081D62249D001D496F /* MySecret-Bridging-Header.h */,
 				09302C8C1D428267008A3F74 /* Info.plist */,
 			);
 			path = MySecret;
@@ -137,6 +164,26 @@
 			path = MySecretUITests;
 			sourceTree = "<group>";
 		};
+		E8445C4D16B570BF054D85A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0930BA0D1D622588001D496F /* SafariServices.framework */,
+				0930BA0B1D622580001D496F /* SystemConfiguration.framework */,
+				0930BA091D622576001D496F /* AddressBook.framework */,
+				11791F1F1135F7E5355E31BC /* Pods_MySecret.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA3D061B70A1B823C98B8EC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				254F6C6C917EA3DE38F97E42 /* Pods-MySecret.debug.xcconfig */,
+				862405C9716C230C83661EBB /* Pods-MySecret.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09302CA51D428268008A3F74 /* Build configuration list for PBXNativeTarget "MySecret" */;
 			buildPhases = (
+				0D049D43F4FFED8DA68295BD /* [CP] Check Pods Manifest.lock */,
 				09302C791D428267008A3F74 /* Sources */,
 				09302C7A1D428267008A3F74 /* Frameworks */,
 				09302C7B1D428267008A3F74 /* Resources */,
+				6E5085D45CFC12FA5E655F67 /* [CP] Embed Pods Frameworks */,
+				5D0FAF2D1C9229BB1556B85C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09302C8B1D428267008A3F74 /* LaunchScreen.storyboard in Resources */,
+				0930BA071D6223EA001D496F /* GoogleService-Info.plist in Resources */,
 				09302C881D428267008A3F74 /* Assets.xcassets in Resources */,
 				09302C861D428267008A3F74 /* Main.storyboard in Resources */,
 			);
@@ -264,12 +315,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D049D43F4FFED8DA68295BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5D0FAF2D1C9229BB1556B85C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MySecret/Pods-MySecret-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E5085D45CFC12FA5E655F67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MySecret/Pods-MySecret-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		09302C791D428267008A3F74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09DE1FFF1D6238C90022BF28 /* MSGoogleViewController.swift in Sources */,
 				09302CAF1D428AEB008A3F74 /* MSPhoneContactsViewController.swift in Sources */,
+				097B226C1D621A07007FADCF /* MSTwitterViewController.swift in Sources */,
 				09302C831D428267008A3F74 /* MSHomeViewController.swift in Sources */,
 				09302C811D428267008A3F74 /* AppDelegate.swift in Sources */,
 				09302CB51D42A250008A3F74 /* BluetoothCustomTVC.swift in Sources */,
@@ -414,25 +515,29 @@
 		};
 		09302CA61D428268008A3F74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 254F6C6C917EA3DE38F97E42 /* Pods-MySecret.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MySecret/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yye.MySecret.MySecret;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yye.MySecret;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MySecret/MySecret-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		09302CA71D428268008A3F74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 862405C9716C230C83661EBB /* Pods-MySecret.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MySecret/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yye.MySecret.MySecret;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yye.MySecret;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MySecret/MySecret-Bridging-Header.h";
 			};
 			name = Release;
 		};

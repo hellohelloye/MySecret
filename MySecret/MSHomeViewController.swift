@@ -11,7 +11,7 @@ import UIKit
 class MSHomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var msTableView: UITableView!
-    var items: [String] = ["ACCESS PHONE CONTACTS","DISPLAY NEARBY BLUETOOTH"]
+    var items: [String] = ["ACCESS PHONE CONTACTS","DISPLAY NEARBY BLUETOOTH", "Google SignIn", "Twitter SignIn"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +38,16 @@ class MSHomeViewController: UIViewController, UITableViewDataSource, UITableView
         case 1:
             let bluetoothVC = self.storyboard!.instantiateViewControllerWithIdentifier("msBluetoothVC")
             self.navigationController!.pushViewController(bluetoothVC, animated: true)
+            
+            break
+        case 2:
+            let googleVC = self.storyboard!.instantiateViewControllerWithIdentifier("msGoogleVC")
+            self.navigationController!.pushViewController(googleVC, animated: true)
+            
+            break
+        case 3:
+            let twitterVC = self.storyboard!.instantiateViewControllerWithIdentifier("msTwitterVC")
+            self.navigationController!.pushViewController(twitterVC, animated: true)
             
             break
         default:
